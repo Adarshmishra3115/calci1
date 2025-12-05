@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .col{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    .row{
+        display:flex;
+        height:40px;
+        width: 180px;
+        border:2px;
+        border:solid;
+        border-color:palegreen
+    }
+    .outputbox{
+        height:20px;
+        width:180px;
+        border: 2px solid green
+    }
+    #userInput{
+        width:175px;
+        height:20px;
+        border: 2px solid green
+    }
+    #calc
+    {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div>
+        <div> <input type="text" id="userInput" placeholder="0000"></div>
+        <div class="outputbox"> ANS</div>
+        <div class="row">
+            <div class="col" onclick="clickbutton(this)" style="border:1px solid black;  height: 40px; width:60px">7</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">8</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">9</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">4</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">5</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">6</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">1</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">2</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">3</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">+</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">0</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">-</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">*</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">/</div>
+            <div class="col" onclick="clickbutton(this)"  style="border:1px solid black;  height: 40px; width:60px">CLR</div>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
